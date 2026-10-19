@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en" data-lang="en"
+      data-title-tr="Gizlilik Politikası — WalletMon"
+      data-title-en="Privacy Policy — WalletMon">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — WalletMon</title>
+  <meta name="description" content="How WalletMon handles your data. WalletMon'un verilerini nasıl işlediği.">
+  <meta name="theme-color" content="#0D9488" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F0F0F" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script>
+    (function () {
+      var l = null;
+      try { l = new URLSearchParams(location.search).get("lang"); } catch (e) {}
+      if (l !== "tr" && l !== "en") { try { l = localStorage.getItem("lang"); } catch (e) {} }
+      if (l !== "tr" && l !== "en") { l = /^tr\b/i.test(navigator.language || "") ? "tr" : "en"; }
+      document.documentElement.setAttribute("data-lang", l);
+      document.documentElement.lang = l;
+    })();
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/assets/apple-touch-icon.png" alt=""><span>WalletMon</span></a>
+      <nav class="nav" aria-label="Site">
+        <a href="/privacy/" aria-current="page"><span data-l="tr">Gizlilik</span><span data-l="en">Privacy</span></a>
+        <a href="/terms/"><span data-l="tr">Koşullar</span><span data-l="en">Terms</span></a>
+        <a href="/support/"><span data-l="tr">Destek</span><span data-l="en">Support</span></a>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-set-lang="tr" aria-pressed="false">TR</button>
+          <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- ============================== TÜRKÇE ============================== -->
+    <article class="doc" data-l="tr" lang="tr">
+      <h1>Gizlilik Politikası</h1>
+      <p class="meta">Yürürlük tarihi: 20 Ekim 2026</p>
+
+      <p>Bu politika, WalletMon iOS uygulamasının (“Uygulama”) hangi kişisel verileri işlediğini, bunları neden ve nerede sakladığını ve bu veriler üzerindeki haklarını anlatır. 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve AB Genel Veri Koruma Tüzüğü (GDPR) kapsamında aydınlatma metni yerine de geçer.</p>
+
+      <section class="summary">
+        <h2>Kısaca</h2>
+        <ul>
+          <li>Reklam göstermiyoruz, verilerini satmıyoruz ve seni başka uygulamalar ya da siteler arasında izlemiyoruz.</li>
+          <li>Girdiğin finans kayıtları hesabına bağlı olarak Google Firebase'de, Almanya'daki (Frankfurt) sunucularda saklanır.</li>
+          <li>Kullanım istatistiklerine tutarlar, arama metinleri veya kendi yazdığın başlıklar eklenmez.</li>
+          <li>Ekstre PDF'leri telefonunda okunur; dosyanın kendisi hiçbir sunucuya gönderilmez.</li>
+          <li>Hesabını ve tüm verilerini istediğin an uygulamadan silebilirsin.</li>
+        </ul>
+      </section>
+
+      <nav class="toc" aria-label="İçindekiler">
+        <strong>İçindekiler</strong>
+        <ol>
+          <li><a href="#tr-sorumlu">Veri sorumlusu</a></li>
+          <li><a href="#tr-veriler">İşlediğimiz veriler</a></li>
+          <li><a href="#tr-cihaz">Cihazında kalanlar</a></li>
+          <li><a href="#tr-amac">Amaçlar ve hukuki sebepler</a></li>
+          <li><a href="#tr-saglayicilar">Hizmet sağlayıcılar ve aktarım</a></li>
+          <li><a href="#tr-saklama">Saklama süreleri</a></li>
+          <li><a href="#tr-haklar">Hakların</a></li>
+          <li><a href="#tr-guvenlik">Güvenlik</a></li>
+          <li><a href="#tr-cocuk">Çocuklar</a></li>
+          <li><a href="#tr-site">Bu web sitesi</a></li>
+          <li><a href="#tr-degisiklik">Değişiklikler</a></li>
+          <li><a href="#tr-iletisim">İletişim</a></li>
+        </ol>
+      </nav>
+
+      <h2 id="tr-sorumlu">1. Veri sorumlusu</h2>
+      <p>Uygulamayı bireysel geliştirici olarak Murat Aktaş geliştirir ve yayımlar; KVKK ve GDPR anlamında veri sorumlusu odur. Gizlilikle ilgili her soru ve başvuru için: <a href="mailto:walletmonapp@yandex.com">walletmonapp@yandex.com</a>.</p>
+
+      <h2 id="tr-veriler">2. İşlediğimiz veriler</h2>
+
+      <h3>Hesap bilgileri</h3>
+      <p>Uygulamayı ilk açtığında senin için anonim bir misafir hesabı oluşturulur; bunun için ad veya e-posta istenmez. Apple ile, Google ile ya da e-posta ve şifreyle giriş yaparsan e-posta adresin, giriş sağlayıcısının paylaştığı adın, giriş yöntemin ve hesabının oluşturulma tarihi işlenir. Şifren Firebase Authentication tarafından saklanır; biz göremeyiz. Profilinde seçtiğin avatar ve ad da hesabına kaydedilir.</p>
+
+      <h3>Finans kayıtların</h3>
+      <p>Uygulamaya girdiğin her şey: ödemeler, gelirler, harcamalar, kategoriler, başlık ve notlar, tutarlar, tarihler, tekrar ve hatırlatıcı ayarları; birikimlerin ve varlıkların (tür, miktar, alış değeri, alım tarihleri), hedeflerin, nakit düzeltmelerin ve para birimi tercihin. Bu kayıtlar yalnızca sana hizmet sunmak için saklanır; analiz, reklam veya başka bir amaçla incelenmez.</p>
+
+      <h3>Ekstre içe aktarma</h3>
+      <p>Bir kart veya hesap ekstresi PDF'i seçtiğinde dosya telefonunda okunur ve satırlara ayrılır. PDF'in kendisi hiçbir sunucuya yüklenmez; yalnızca gözden geçirip onayladığın satırlar finans kayıtların olarak kaydedilir.</p>
+
+      <h3>Cihaz bilgileri</h3>
+      <p>Hesabının hangi cihazlarda kullanıldığını bilmek ve hataları ayıklayabilmek için: cihaz modeli, iOS sürümü, uygulama sürümü ve derleme numarası, dil/bölge ayarı, saat dilimi, son görülme zamanı ve bu kuruluma özel rastgele üretilmiş bir kimlik.</p>
+
+      <h3>Kullanım istatistikleri</h3>
+      <p>Uygulamayı geliştirmek için Firebase Analytics ile hangi ekranların açıldığını, hangi düğmelere basıldığını ve işlemlerin başarılı ya da başarısız olduğunu kaydederiz. Bu kayıtlara hesap kimliğin, kurulum kimliği, abonelik ve giriş durumun, dil, para birimi, tema ve bildirim tercihin ile uygulama sürümü eklenir.</p>
+      <p>Bir finans uygulaması olduğumuz için şunlar <strong>hiçbir zaman</strong> istatistiklere eklenmez: tutarların kendisi (yalnızca “100–500” gibi bir aralık), arama metinleri (yalnızca uzunluğu), kendi yazdığın başlıklar, e-posta adresin ve adın.</p>
+
+      <h3>Çökme raporları</h3>
+      <p>Uygulama çökerse Firebase Crashlytics; hatanın teknik ayrıntılarını, cihaz modelini, iOS ve uygulama sürümünü ve kurulum kimliğini kaydeder.</p>
+
+      <h3>Abonelik bilgileri</h3>
+      <p>WalletMon Premium satın alırsan ödeme Apple tarafından App Store üzerinden alınır; kart veya banka bilgilerini görmeyiz. RevenueCat, Apple'dan gelen satın alma kayıtlarını (ürün, satın alma ve yenileme tarihleri, aboneliğin durumu, ülke ve fiyat) hesap kimliğinle eşleştirerek aboneliğinin etkin olup olmadığını bize bildirir. Abonelik durumunun bir kopyası hesabında saklanır.</p>
+
+      <h3>Destek mesajları</h3>
+      <p>“Bize ulaşın” formunu gönderirsen seçtiğin konu, mesajın, yanıt için yazdığın e-posta adresi, hesap kimliğin, uygulama ve iOS sürümün ve cihaz modelin kaydedilir. Bize doğrudan e-posta yazarsan e-postadaki bilgileri işleriz.</p>
+
+      <h3>Piyasa verileri</h3>
+      <p>Döviz kurları, altın, fon ve hisse fiyatlarını almak için Uygulama şu kaynaklara istek gönderir: Türkiye Cumhuriyet Merkez Bankası, TEFAS, Yahoo Finance, gold-api.com, Truncgil Finans, ExchangeRate-API (open.er-api.com) ve jsDelivr üzerinden yayımlanan açık kur verisi. Bu isteklerde yalnızca sorgulanan sembol veya para birimi bulunur; finans kayıtların ya da hesap bilgilerin gönderilmez. Bu servisler, her internet isteğinde olduğu gibi IP adresini görebilir.</p>
+
+      <h2 id="tr-cihaz">3. Cihazında kalanlar</h2>
+      <ul>
+        <li><strong>Face ID / Touch ID:</strong> Uygulama kilidini iOS doğrular; biyometrik verin bize hiçbir zaman ulaşmaz.</li>
+        <li><strong>Hatırlatıcılar:</strong> Telefonunda planlanan yerel bildirimlerdir.</li>
+        <li><strong>Widget ve önbellek:</strong> Hızlı açılış ve ana ekran widget'ı için kayıtlarının bir kopyası cihazında tutulur.</li>
+        <li><strong>PDF raporlar:</strong> Telefonunda oluşturulur; yalnızca sen paylaşırsan paylaşılır.</li>
+      </ul>
+
+      <h2 id="tr-amac">4. Amaçlar ve hukuki sebepler</h2>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Amaç</th><th>Veriler</th><th>Hukuki sebep</th></tr></thead>
+          <tbody>
+            <tr><td>Hesabını açmak, kayıtlarını saklamak ve cihazların arasında eşitlemek</td><td>Hesap bilgileri, finans kayıtları, cihaz bilgileri</td><td>Sözleşmenin kurulması ve ifası (KVKK m.5/2-c, GDPR m.6/1-b)</td></tr>
+            <tr><td>Aboneliğini sağlamak ve doğrulamak</td><td>Abonelik bilgileri, hesap kimliği</td><td>Sözleşmenin ifası (KVKK m.5/2-c, GDPR m.6/1-b)</td></tr>
+            <tr><td>Kötüye kullanımı önlemek, isteklerin gerçek uygulamadan geldiğini doğrulamak</td><td>Cihaz doğrulama sonucu (Apple App Attest), cihaz bilgileri</td><td>Meşru menfaat (KVKK m.5/2-f, GDPR m.6/1-f)</td></tr>
+            <tr><td>Uygulamayı iyileştirmek, hataları bulmak</td><td>Kullanım istatistikleri, çökme raporları</td><td>Meşru menfaat (KVKK m.5/2-f, GDPR m.6/1-f)</td></tr>
+            <tr><td>Destek taleplerine yanıt vermek</td><td>Destek mesajları</td><td>Sözleşmenin ifası ve meşru menfaat</td></tr>
+            <tr><td>Yasal yükümlülükleri yerine getirmek</td><td>Gerekli olan veriler</td><td>Kanuni yükümlülük (KVKK m.5/2-ç, GDPR m.6/1-c)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="tr-saglayicilar">5. Hizmet sağlayıcılar ve yurt dışına aktarım</h2>
+      <p>Verilerini satmayız ve pazarlama amacıyla kimseyle paylaşmayız. Uygulamanın çalışması için şu sağlayıcıları kullanırız; her biri verileri yalnızca bizim adımıza ve kendi gizlilik koşulları çerçevesinde işler:</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Sağlayıcı</th><th>Ne için</th><th>Konum</th></tr></thead>
+          <tbody>
+            <tr><td>Google — Firebase Authentication</td><td>Giriş ve hesap</td><td>ABD ve diğer Google bölgeleri</td></tr>
+            <tr><td>Google — Cloud Firestore</td><td>Finans kayıtları, profil, cihazlar, destek mesajları</td><td>Almanya (Frankfurt, europe-west3)</td></tr>
+            <tr><td>Google — Firebase Analytics, Crashlytics, App Check</td><td>İstatistikler, çökme raporları, uygulama doğrulama</td><td>ABD ve diğer Google bölgeleri</td></tr>
+            <tr><td>Google Sign-In</td><td>Google ile giriş</td><td>ABD</td></tr>
+            <tr><td>Apple — Sign in with Apple, App Store, App Attest</td><td>Apple ile giriş, ödemeler, cihaz doğrulama</td><td>ABD ve diğer Apple bölgeleri</td></tr>
+            <tr><td>RevenueCat, Inc.</td><td>Abonelik durumu</td><td>ABD</td></tr>
+            <tr><td>Piyasa veri sağlayıcıları (bkz. bölüm 2)</td><td>Fiyat ve kurlar; kişisel veri gönderilmez</td><td>Çeşitli</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Bu sağlayıcıların bir kısmı verileri Türkiye ve Avrupa Ekonomik Alanı dışında, özellikle ABD'de işler. Bu aktarımlar KVKK m.9 ve GDPR'ın 5. bölümü kapsamında, sağlayıcıların standart sözleşme hükümleri ve benzeri güvenceleri çerçevesinde yapılır.</p>
+
+      <h2 id="tr-saklama">6. Saklama süreleri</h2>
+      <ul>
+        <li><strong>Hesap ve finans kayıtları:</strong> Hesabın açık olduğu sürece. Hesabını sildiğinde kayıtların, profilin ve cihaz kayıtların silinir.</li>
+        <li><strong>Kullanım istatistikleri ve çökme raporları:</strong> Google'ın bu hizmetler için belirlediği sürelerin sonunda kendiliğinden silinir; hesabına bağlı istatistiklerin silinmesini e-postayla da isteyebilirsin.</li>
+        <li><strong>Abonelik kayıtları:</strong> Apple ve RevenueCat tarafından, vergi ve muhasebe yükümlülüklerinin gerektirdiği süre boyunca.</li>
+        <li><strong>Destek mesajları:</strong> Talebin çözülmesi için gereken süre boyunca, en fazla iki yıl.</li>
+      </ul>
+      <p>Misafir olarak kullanıyorsan verilerin bu cihazdaki anonim hesaba bağlıdır. Uygulamayı silmeden önce verilerini saklamak istersen Apple, Google ya da e-postayla giriş yap; silinmesini istersen önce Ayarlar'dan hesabını sil.</p>
+
+      <h2 id="tr-haklar">7. Hakların</h2>
+      <p>KVKK m.11 ve GDPR kapsamında; verilerinin işlenip işlenmediğini öğrenme, verilerine erişme ve bir kopyasını alma, yanlışsa düzeltilmesini, gereksizse silinmesini isteme, işlemenin kısıtlanmasını isteme ve meşru menfaate dayanan işlemeye itiraz etme, verilerini taşıma, aktarıldığı üçüncü kişileri öğrenme ve zarara uğradıysan giderilmesini talep etme hakların vardır.</p>
+      <ul>
+        <li><strong>Uygulama içinden:</strong> Profilinden adını ve avatarını değiştirebilir, <em>Ayarlar → Verileri sıfırla</em> ile kayıtlarını, <em>Ayarlar → Hesabımı sil</em> ile hesabını ve tüm verilerini silebilirsin.</li>
+        <li><strong>E-postayla:</strong> Diğer talepler için <a href="mailto:walletmonapp@yandex.com">walletmonapp@yandex.com</a> adresine yaz. Başvurunu en geç 30 gün içinde yanıtlarız.</li>
+        <li><strong>Şikâyet:</strong> Yanıtımızdan memnun kalmazsan Türkiye'de Kişisel Verileri Koruma Kurulu'na, AB'de ise bulunduğun ülkenin veri koruma otoritesine başvurabilirsin.</li>
+      </ul>
+
+      <h2 id="tr-guvenlik">8. Güvenlik</h2>
+      <p>Uygulama ile sunucular arasındaki tüm trafik şifrelidir (TLS). Veritabanı kuralları, her hesabın yalnızca kendi verisini okuyup yazabilmesine izin verir. Sunucuya gelen istekler Apple App Attest ile doğrulanır. İstersen uygulamayı Face ID / Touch ID ile kilitleyebilirsin. Hiçbir sistem kusursuz değildir; bir veri ihlali olursa yasaların öngördüğü şekilde seni ve yetkili makamları bilgilendiririz.</p>
+
+      <h2 id="tr-cocuk">9. Çocuklar</h2>
+      <p>Uygulama 13 yaşından küçük çocuklara yönelik değildir ve onlardan bilerek veri toplamayız. Böyle bir durumu fark edersen bize yaz, verileri sileriz.</p>
+
+      <h2 id="tr-site">10. Bu web sitesi</h2>
+      <p>walletmonapp.github.io çerez kullanmaz, istatistik toplamaz ve başka sitelerden içerik yüklemez. Seçtiğin dil yalnızca tarayıcında saklanır. Site GitHub Pages'te barındırılır; GitHub, güvenlik amacıyla ziyaretçilerin IP adreslerini kaydedebilir (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Gizlilik Bildirimi</a>).</p>
+
+      <h2 id="tr-degisiklik">11. Değişiklikler</h2>
+      <p>Bu politikayı Uygulama değiştikçe güncelleriz. Güncel sürüm her zaman bu sayfadadır ve en üstteki yürürlük tarihi değişir. Verilerini kullanma biçimimizi önemli ölçüde değiştiren bir güncellemeyi Uygulama içinde de duyururuz.</p>
+
+      <h2 id="tr-iletisim">12. İletişim</h2>
+      <div class="contact-card">
+        <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3 7 9 6 9-6"/></svg></span>
+        <div>Murat Aktaş — WalletMon<br><a href="mailto:walletmonapp@yandex.com">walletmonapp@yandex.com</a></div>
+      </div>
+    </article>
+
+    <!-- ============================== ENGLISH ============================== -->
+    <article class="doc" data-l="en" lang="en">
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective date: 20 October 2026</p>
+
+      <p>This policy explains what personal data the WalletMon iOS app (the “App”) processes, why and where it is kept, and the rights you have over it. It also serves as the notice required by the EU General Data Protection Regulation (GDPR) and Turkey's Personal Data Protection Law No. 6698 (KVKK).</p>
+
+      <section class="summary">
+        <h2>In short</h2>
+        <ul>
+          <li>We show no ads, we never sell your data, and we do not track you across other apps or websites.</li>
+          <li>The records you enter are stored with your account in Google Firebase, on servers in Frankfurt, Germany.</li>
+          <li>Usage statistics never contain amounts, search text or titles you typed.</li>
+          <li>Statement PDFs are read on your phone; the file itself is never sent to any server.</li>
+          <li>You can delete your account and all of your data from inside the App at any time.</li>
+        </ul>
+      </section>
+
+      <nav class="toc" aria-label="Contents">
+        <strong>Contents</strong>
+        <ol>
+          <li><a href="#en-controller">Data controller</a></li>
+          <li><a href="#en-data">Data we process</a></li>
+          <li><a href="#en-device">What stays on your device</a></li>
+          <li><a href="#en-purposes">Purposes and legal bases</a></li>
+          <li><a href="#en-processors">Service providers and transfers</a></li>
+          <li><a href="#en-retention">Retention</a></li>
+          <li><a href="#en-rights">Your rights</a></li>
+          <li><a href="#en-security">Security</a></li>
+          <li><a href="#en-children">Children</a></li>
+          <li><a href="#en-site">This website</a></li>
+          <li><a href="#en-changes">Changes</a></li>
+          <li><a href="#en-contact">Contact</a></li>
+        </ol>
+      </nav>
+
+      <h2 id="en-controller">1. Data controller</h2>
+      <p>The App is developed and published by Murat Aktaş as an individual developer, who is the data controller under the GDPR and KVKK. For any privacy question or request: <a href="mailto:walletmonapp@yandex.com">walletmonapp@yandex.com</a>.</p>
+
+      <h2 id="en-data">2. Data we process</h2>
+
+      <h3>Account</h3>
+      <p>When you first open the App, an anonymous guest account is created for you; no name or e-mail is asked for. If you sign in with Apple, with Google, or with an e-mail and password, we process your e-mail address, the name your sign-in provider shares, your sign-in method and when your account was created. Your password is held by Firebase Authentication and is never visible to us. The avatar and name you choose in your profile are saved to your account.</p>
+
+      <h3>Your financial records</h3>
+      <p>Everything you enter: payments, income, spending, categories, titles and notes, amounts, dates, repeat and reminder settings; your savings and holdings (type, quantity, purchase value, purchase dates), goals, cash adjustments and preferred currency. These records are kept only to provide the App to you; they are not analysed, used for advertising or used for any other purpose.</p>
+
+      <h3>Statement import</h3>
+      <p>When you pick a card or account statement PDF, the file is read and split into lines on your phone. The PDF itself is never uploaded anywhere; only the lines you review and confirm are saved as your records.</p>
+
+      <h3>Device information</h3>
+      <p>To know which devices your account is used on and to troubleshoot problems: device model, iOS version, app version and build number, language and region setting, time zone, when the device was last seen, and a random identifier generated for this installation.</p>
+
+      <h3>Usage statistics</h3>
+      <p>To improve the App we use Firebase Analytics to record which screens are opened, which buttons are tapped and whether actions succeed or fail. These events carry your account identifier, the installation identifier, your subscription and sign-in status, your language, currency, theme and notification preferences, and the app version.</p>
+      <p>Because this is a finance app, the following are <strong>never</strong> included in statistics: the amounts themselves (only a range such as “100–500”), search text (only its length), titles you typed, your e-mail address and your name.</p>
+
+      <h3>Crash reports</h3>
+      <p>If the App crashes, Firebase Crashlytics records the technical details of the error, the device model, the iOS and app versions and the installation identifier.</p>
+
+      <h3>Subscriptions</h3>
+      <p>If you buy WalletMon Premium, payment is taken by Apple through the App Store; we never see your card or bank details. RevenueCat matches the purchase records Apple provides (product, purchase and renewal dates, subscription status, country and price) to your account identifier and tells the App whether your subscription is active. A copy of your subscription status is kept with your account.</p>
+
+      <h3>Support messages</h3>
+      <p>If you send the “Contact us” form, we store the topic you chose, your message, the e-mail address you gave for the reply, your account identifier, your app and iOS versions and your device model. If you e-mail us directly, we process the information in that e-mail.</p>
+
+      <h3>Market data</h3>
+      <p>To fetch exchange rates and gold, fund and share prices, the App sends requests to: the Central Bank of the Republic of Türkiye, TEFAS, Yahoo Finance, gold-api.com, Truncgil Finans, ExchangeRate-API (open.er-api.com) and open currency data published through jsDelivr. These requests contain only the symbol or currency being looked up; your records and account details are never sent. Like any internet request, these services can see your IP address.</p>
+
+      <h2 id="en-device">3. What stays on your device</h2>
+      <ul>
+        <li><strong>Face ID / Touch ID:</strong> the app lock is verified by iOS; your biometric data never reaches us.</li>
+        <li><strong>Reminders:</strong> local notifications scheduled on your phone.</li>
+        <li><strong>Widget and cache:</strong> a copy of your records is kept on the device so the App opens quickly and the home-screen widget can show them.</li>
+        <li><strong>PDF reports:</strong> generated on your phone and shared only if you share them.</li>
+      </ul>
+
+      <h2 id="en-purposes">4. Purposes and legal bases</h2>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Purpose</th><th>Data</th><th>Legal basis</th></tr></thead>
+          <tbody>
+            <tr><td>Creating your account, storing your records and syncing them between devices</td><td>Account, financial records, device information</td><td>Performance of a contract (GDPR Art. 6(1)(b), KVKK Art. 5(2)(c))</td></tr>
+            <tr><td>Providing and verifying your subscription</td><td>Subscription data, account identifier</td><td>Performance of a contract (GDPR Art. 6(1)(b), KVKK Art. 5(2)(c))</td></tr>
+            <tr><td>Preventing abuse and verifying that requests come from the genuine App</td><td>Device attestation result (Apple App Attest), device information</td><td>Legitimate interests (GDPR Art. 6(1)(f), KVKK Art. 5(2)(f))</td></tr>
+            <tr><td>Improving the App and finding bugs</td><td>Usage statistics, crash reports</td><td>Legitimate interests (GDPR Art. 6(1)(f), KVKK Art. 5(2)(f))</td></tr>
+            <tr><td>Answering support requests</td><td>Support messages</td><td>Performance of a contract and legitimate interests</td></tr>
+            <tr><td>Meeting legal obligations</td><td>Data as required</td><td>Legal obligation (GDPR Art. 6(1)(c), KVKK Art. 5(2)(ç))</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="en-processors">5. Service providers and international transfers</h2>
+      <p>We do not sell your data or share it with anyone for marketing. The App relies on the following providers, each processing data only on our behalf and under its own privacy terms:</p>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Provider</th><th>Used for</th><th>Location</th></tr></thead>
+          <tbody>
+            <tr><td>Google — Firebase Authentication</td><td>Sign-in and accounts</td><td>USA and other Google regions</td></tr>
+            <tr><td>Google — Cloud Firestore</td><td>Financial records, profile, devices, support messages</td><td>Germany (Frankfurt, europe-west3)</td></tr>
+            <tr><td>Google — Firebase Analytics, Crashlytics, App Check</td><td>Statistics, crash reports, app verification</td><td>USA and other Google regions</td></tr>
+            <tr><td>Google Sign-In</td><td>Signing in with Google</td><td>USA</td></tr>
+            <tr><td>Apple — Sign in with Apple, App Store, App Attest</td><td>Signing in with Apple, payments, device attestation</td><td>USA and other Apple regions</td></tr>
+            <tr><td>RevenueCat, Inc.</td><td>Subscription status</td><td>USA</td></tr>
+            <tr><td>Market data providers (see section 2)</td><td>Prices and rates; no personal data is sent</td><td>Various</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Some of these providers process data outside Turkey and the European Economic Area, notably in the United States. Such transfers rely on the providers' standard contractual clauses and equivalent safeguards under Chapter V of the GDPR and Article 9 of the KVKK.</p>
+
+      <h2 id="en-retention">6. Retention</h2>
+      <ul>
+        <li><strong>Account and financial records:</strong> for as long as your account exists. When you delete your account, your records, profile and device entries are deleted.</li>
+        <li><strong>Usage statistics and crash reports:</strong> deleted automatically at the end of the retention periods Google sets for these services; you can also ask us by e-mail to delete the statistics tied to your account.</li>
+        <li><strong>Subscription records:</strong> kept by Apple and RevenueCat for as long as tax and accounting obligations require.</li>
+        <li><strong>Support messages:</strong> for as long as needed to resolve your request, and no longer than two years.</li>
+      </ul>
+      <p>If you use the App as a guest, your data is tied to the anonymous account on that device. To keep your data before removing the App, sign in with Apple, Google or e-mail; to have it deleted, delete your account in Settings first.</p>
+
+      <h2 id="en-rights">7. Your rights</h2>
+      <p>Under the GDPR and Article 11 of the KVKK you have the right to know whether your data is processed, to access it and receive a copy, to have it corrected if it is wrong and erased if it is no longer needed, to restrict processing and to object to processing based on legitimate interests, to data portability, to learn which third parties it was transferred to, and to claim compensation for any damage.</p>
+      <ul>
+        <li><strong>In the App:</strong> change your name and avatar in your profile, delete your records with <em>Settings → Reset data</em>, and delete your account and all of your data with <em>Settings → Delete my account</em>.</li>
+        <li><strong>By e-mail:</strong> for anything else, write to <a href="mailto:walletmonapp@yandex.com">walletmonapp@yandex.com</a>. We answer within 30 days at the latest.</li>
+        <li><strong>Complaints:</strong> if you are not satisfied with our answer, you can contact the Turkish Personal Data Protection Authority (KVKK) or, in the EU, the data protection authority of your country.</li>
+      </ul>
+
+      <h2 id="en-security">8. Security</h2>
+      <p>All traffic between the App and its servers is encrypted (TLS). Database rules allow each account to read and write only its own data. Requests to our backend are verified with Apple App Attest. You can lock the App with Face ID / Touch ID. No system is perfect; if a data breach occurs, we will notify you and the authorities as the law requires.</p>
+
+      <h2 id="en-children">9. Children</h2>
+      <p>The App is not directed at children under 13, and we do not knowingly collect data from them. If you become aware that this has happened, write to us and we will delete the data.</p>
+
+      <h2 id="en-site">10. This website</h2>
+      <p>walletmonapp.github.io sets no cookies, collects no statistics and loads nothing from other sites. The language you choose is stored only in your browser. The site is hosted on GitHub Pages; GitHub may log visitors' IP addresses for security purposes (<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Privacy Statement</a>).</p>
+
+      <h2 id="en-changes">11. Changes</h2>
+      <p>We update this policy as the App changes. The current version is always on this page, and the effective date at the top changes with it. An update that materially changes how we use your data will also be announced in the App.</p>
+
+      <h2 id="en-contact">12. Contact</h2>
+      <div class="contact-card">
+        <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3 7 9 6 9-6"/></svg></span>
+        <div>Murat Aktaş — WalletMon<br><a href="mailto:walletmonapp@yandex.com">walletmonapp@yandex.com</a></div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© <span data-year>2026</span> WalletMon</span>
+      <nav aria-label="Footer">
+        <a href="/privacy/"><span data-l="tr">Gizlilik Politikası</span><span data-l="en">Privacy Policy</span></a>
+        <a href="/terms/"><span data-l="tr">Kullanım Koşulları</span><span data-l="en">Terms of Use</span></a>
+        <a href="/support/"><span data-l="tr">Destek</span><span data-l="en">Support</span></a>
+        <a href="mailto:walletmonapp@yandex.com">walletmonapp@yandex.com</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="/assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" data-lang="en"
+      data-title-tr="Sayfa bulunamadı — WalletMon"
+      data-title-en="Page not found — WalletMon">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found — WalletMon</title>
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script>
+    (function () {
+      var l = null;
+      try { l = new URLSearchParams(location.search).get("lang"); } catch (e) {}
+      if (l !== "tr" && l !== "en") { try { l = localStorage.getItem("lang"); } catch (e) {} }
+      if (l !== "tr" && l !== "en") { l = /^tr\b/i.test(navigator.language || "") ? "tr" : "en"; }
+      document.documentElement.setAttribute("data-lang", l);
+      document.documentElement.lang = l;
+    })();
+  </script>
+</head>
+<body>
+  <main class="hero wrap">
+    <img class="hero-icon" src="/assets/icon-512.png" alt="WalletMon">
+    <h1><span data-l="tr">Sayfa bulunamadı</span><span data-l="en">Page not found</span></h1>
+    <p class="tagline">
+      <a href="/"><span data-l="tr">Ana sayfaya dön</span><span data-l="en">Back to the home page</span></a>
+    </p>
+  </main>
+  <script src="/assets/site.js"></script>
+</body>
+</html>

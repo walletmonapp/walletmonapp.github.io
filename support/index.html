@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en" data-lang="en"
+      data-title-tr="Destek — WalletMon"
+      data-title-en="Support — WalletMon">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — WalletMon</title>
+  <meta name="description" content="Help with WalletMon: subscriptions, restoring purchases, moving devices, deleting your account. WalletMon destek.">
+  <meta name="theme-color" content="#0D9488" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F0F0F" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script>
+    (function () {
+      var l = null;
+      try { l = new URLSearchParams(location.search).get("lang"); } catch (e) {}
+      if (l !== "tr" && l !== "en") { try { l = localStorage.getItem("lang"); } catch (e) {} }
+      if (l !== "tr" && l !== "en") { l = /^tr\b/i.test(navigator.language || "") ? "tr" : "en"; }
+      document.documentElement.setAttribute("data-lang", l);
+      document.documentElement.lang = l;
+    })();
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/assets/apple-touch-icon.png" alt=""><span>WalletMon</span></a>
+      <nav class="nav" aria-label="Site">
+        <a href="/privacy/"><span data-l="tr">Gizlilik</span><span data-l="en">Privacy</span></a>
+        <a href="/terms/"><span data-l="tr">Koşullar</span><span data-l="en">Terms</span></a>
+        <a href="/support/" aria-current="page"><span data-l="tr">Destek</span><span data-l="en">Support</span></a>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-set-lang="tr" aria-pressed="false">TR</button>
+          <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- ============================== TÜRKÇE ============================== -->
+    <article class="doc" data-l="tr" lang="tr">
+      <h1>Destek</h1>
+      <p class="meta">Bir sorun mu var, ya da bir fikrin mi? Yazman yeterli.</p>
+
+      <div class="contact-card">
+        <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3 7 9 6 9-6"/></svg></span>
+        <div>
+          <a href="mailto:walletmonapp@yandex.com">walletmonapp@yandex.com</a><br>
+          <span style="color: var(--muted); font-size: 15px;">Uygulamada <em>Ayarlar → Bize ulaşın</em> ile de yazabilirsin; cihaz ve sürüm bilgisi otomatik eklenir. En kısa sürede yanıt veririz.</span>
+        </div>
+      </div>
+
+      <h2>Sık sorulanlar</h2>
+
+      <details class="faq">
+        <summary>Aboneliğimi nasıl iptal ederim?</summary>
+        <div>
+          <p>iPhone'unda <em>Ayarlar → [adın] → Abonelikler → WalletMon</em> yolunu izle ve <em>Aboneliği İptal Et</em>'e dokun. Uygulamada Premium ekranındaki <em>Aboneliği yönet</em> de aynı yere götürür.</p>
+          <p>İptal, dönemin sonunda geçerli olur; o güne kadar Premium açık kalır. Uygulamayı silmek aboneliği iptal etmez.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Yeni telefonda Premium görünmüyor</summary>
+        <div>
+          <p>Aboneliği aldığın Apple ID ile giriş yaptığından emin ol, sonra uygulamada Premium ekranındaki <em>Satın alımlarımı geri yükle</em>'ye dokun.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Verilerimi yeni telefona nasıl taşırım?</summary>
+        <div>
+          <p>Eski telefonda <em>Ayarlar</em>'dan Apple, Google ya da e-postayla giriş yap; misafir olarak girdiğin kayıtlar hesabına aktarılır. Yeni telefonda aynı yöntemle giriş yaptığında kayıtların gelir.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>İade almak istiyorum</summary>
+        <div>
+          <p>Ödemeleri Apple aldığı için iadeler de Apple üzerinden yapılır: <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a> adresinde satın almanı seç ve iade iste.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Hesabımı ve verilerimi nasıl silerim?</summary>
+        <div>
+          <p><em>Ayarlar → Hesabımı sil</em> hesabını ve bütün kayıtlarını kalıcı olarak siler. Yalnızca kayıtları silmek istersen <em>Ayarlar → Verileri sıfırla</em>'yı kullan. Bir App Store aboneliğin varsa onu ayrıca iptal etmeyi unutma.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Kur ve fiyatlar neden bankamdakinden farklı?</summary>
+        <div>
+          <p>Fiyatlar Merkez Bankası, TEFAS ve diğer açık kaynaklardan alınır; bankaların alış-satış farkını içermez ve birkaç dakika gecikmeli olabilir. Bilgi amaçlıdır, alım-satım için kullanılmamalıdır.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Ekstrem içe aktarılmadı</summary>
+        <div>
+          <p>Bankanın uygulamasından veya internet şubesinden indirdiğin, metin içeren PDF'ler okunabilir; taranmış ya da fotoğraftan oluşturulmuş PDF'ler okunamaz. Sorun sürerse bize yaz. Ekstreni göndermen gerekmez; bankanın adını söylemen yeterli.</p>
+        </div>
+      </details>
+
+      <p style="margin-top: 32px;"><a href="/privacy/">Gizlilik Politikası</a> · <a href="/terms/">Kullanım Koşulları</a></p>
+    </article>
+
+    <!-- ============================== ENGLISH ============================== -->
+    <article class="doc" data-l="en" lang="en">
+      <h1>Support</h1>
+      <p class="meta">Something not working, or an idea to share? Just write.</p>
+
+      <div class="contact-card">
+        <span class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3 7 9 6 9-6"/></svg></span>
+        <div>
+          <a href="mailto:walletmonapp@yandex.com">walletmonapp@yandex.com</a><br>
+          <span style="color: var(--muted); font-size: 15px;">You can also write from <em>Settings → Contact us</em> in the App; your device and version are added for you. We answer as soon as we can.</span>
+        </div>
+      </div>
+
+      <h2>Frequently asked</h2>
+
+      <details class="faq">
+        <summary>How do I cancel my subscription?</summary>
+        <div>
+          <p>On your iPhone, go to <em>Settings → [your name] → Subscriptions → WalletMon</em> and tap <em>Cancel Subscription</em>. <em>Manage subscription</em> on the Premium screen in the App takes you to the same place.</p>
+          <p>Cancellation takes effect at the end of the current period, and Premium stays on until then. Deleting the App does not cancel the subscription.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Premium doesn't show on my new phone</summary>
+        <div>
+          <p>Make sure you are signed in with the Apple ID you subscribed with, then tap <em>Restore my purchases</em> on the Premium screen in the App.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>How do I move my data to a new phone?</summary>
+        <div>
+          <p>On your old phone, sign in from <em>Settings</em> with Apple, Google or e-mail; anything you entered as a guest moves into your account. Sign in the same way on the new phone and your records come with you.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>I'd like a refund</summary>
+        <div>
+          <p>Apple takes the payment, so refunds go through Apple too: open <a href="https://reportaproblem.apple.com" rel="noopener">reportaproblem.apple.com</a>, choose the purchase and request a refund.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>How do I delete my account and data?</summary>
+        <div>
+          <p><em>Settings → Delete my account</em> permanently deletes your account and all of your records. To delete only your records, use <em>Settings → Reset data</em>. If you have an App Store subscription, remember to cancel it separately.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>Why do rates and prices differ from my bank's?</summary>
+        <div>
+          <p>Prices come from the Central Bank of Türkiye, TEFAS and other open sources; they do not include your bank's buy/sell spread and may be a few minutes behind. They are for information only and should not be used for trading.</p>
+        </div>
+      </details>
+
+      <details class="faq">
+        <summary>My statement didn't import</summary>
+        <div>
+          <p>PDFs downloaded from your bank's app or online banking, which contain text, can be read; scanned PDFs or PDFs made from photos cannot. If it still fails, write to us. There is no need to send the statement itself; the bank's name is enough.</p>
+        </div>
+      </details>
+
+      <p style="margin-top: 32px;"><a href="/privacy/">Privacy Policy</a> · <a href="/terms/">Terms of Use</a></p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© <span data-year>2026</span> WalletMon</span>
+      <nav aria-label="Footer">
+        <a href="/privacy/"><span data-l="tr">Gizlilik Politikası</span><span data-l="en">Privacy Policy</span></a>
+        <a href="/terms/"><span data-l="tr">Kullanım Koşulları</span><span data-l="en">Terms of Use</span></a>
+        <a href="/support/"><span data-l="tr">Destek</span><span data-l="en">Support</span></a>
+        <a href="mailto:walletmonapp@yandex.com">walletmonapp@yandex.com</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="/assets/site.js"></script>
+</body>
+</html>
