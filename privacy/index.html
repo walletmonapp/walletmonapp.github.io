@@ -51,7 +51,7 @@
       <section class="summary">
         <h2>Kısaca</h2>
         <ul>
-          <li>Reklam göstermiyoruz, verilerini satmıyoruz ve seni başka uygulamalar ya da siteler arasında izlemiyoruz.</li>
+          <li>Verilerini satmıyoruz. Ücretsiz sürümde reklam yalnızca sen ödüllü bir reklam izlemeyi seçtiğinde gösterilir; reklam takibi yalnızca iOS'ta izin verirsen yapılır.</li>
           <li>Girdiğin finans kayıtları hesabına bağlı olarak Google Firebase'de, Almanya'daki (Frankfurt) sunucularda saklanır.</li>
           <li>Kullanım istatistiklerine tutarlar, arama metinleri veya kendi yazdığın başlıklar eklenmez.</li>
           <li>Ekstre PDF'leri telefonunda okunur; dosyanın kendisi hiçbir sunucuya gönderilmez.</li>
@@ -86,23 +86,23 @@
       <p>Uygulamayı ilk açtığında senin için anonim bir misafir hesabı oluşturulur; bunun için ad veya e-posta istenmez. Apple ile, Google ile ya da e-posta ve şifreyle giriş yaparsan e-posta adresin, giriş sağlayıcısının paylaştığı adın, giriş yöntemin ve hesabının oluşturulma tarihi işlenir. Şifren Firebase Authentication tarafından saklanır; biz göremeyiz. Profilinde seçtiğin avatar ve ad da hesabına kaydedilir.</p>
 
       <h3>Finans kayıtların</h3>
-      <p>Uygulamaya girdiğin her şey: ödemeler, gelirler, harcamalar, kategoriler, başlık ve notlar, tutarlar, tarihler, tekrar ve hatırlatıcı ayarları; birikimlerin ve varlıkların (tür, miktar, alış değeri, alım tarihleri), hedeflerin, nakit düzeltmelerin ve para birimi tercihin. Bu kayıtlar yalnızca sana hizmet sunmak için saklanır; analiz, reklam veya başka bir amaçla incelenmez.</p>
+      <p>Uygulamaya girdiğin her şey: ödemeler, gelirler, harcamalar, kategoriler, başlık ve notlar, tutarlar, tarihler, tekrar ve hatırlatıcı ayarları; birikimlerin ve varlıkların (tür, miktar, alış değeri, alım tarihleri), hedeflerin, nakit düzeltmelerin ve para birimi tercihin. Bu kayıtlar yalnızca sana hizmet sunmak için saklanır. İçerikleri (başlıklar, notlar, tutarların kendisi, varlıklarının sembolleri) incelenmez ve reklam için kullanılmaz; uygulamanın nasıl kullanıldığını anlamak için yalnızca kategori, kayıt türü ve tutar aralığı gibi kaba bilgiler kullanım istatistiklerine eklenir (aşağıya bak).</p>
 
       <h3>Ekstre içe aktarma</h3>
       <p>Bir kart veya hesap ekstresi PDF'i seçtiğinde dosya telefonunda okunur ve satırlara ayrılır. PDF'in kendisi hiçbir sunucuya yüklenmez; yalnızca gözden geçirip onayladığın satırlar finans kayıtların olarak kaydedilir.</p>
 
       <h3>Cihaz bilgileri</h3>
-      <p>Hesabının hangi cihazlarda kullanıldığını bilmek ve hataları ayıklayabilmek için: cihaz modeli, iOS sürümü, uygulama sürümü ve derleme numarası, dil/bölge ayarı, saat dilimi, son görülme zamanı ve bu kuruluma özel rastgele üretilmiş bir kimlik.</p>
+      <p>Hesabının hangi cihazlarda kullanıldığını bilmek ve hataları ayıklayabilmek için: cihaz modeli, iOS sürümü, uygulama sürümü ve derleme numarası, dil/bölge ayarı, saat dilimi, son görülme zamanı ve iOS'un bu uygulamaya verdiği cihaz kimliği (satıcı kimliği, IDFV). Bu kimlik, uygulamayı silip yeniden yüklediğinde de aynı kalması için cihazının anahtar zincirinde saklanır.</p>
 
       <h3>Kullanım istatistikleri</h3>
-      <p>Uygulamayı geliştirmek için Firebase Analytics ile hangi ekranların açıldığını, hangi düğmelere basıldığını ve işlemlerin başarılı ya da başarısız olduğunu kaydederiz. Bu kayıtlara hesap kimliğin, kurulum kimliği, abonelik ve giriş durumun, dil, para birimi, tema ve bildirim tercihin ile uygulama sürümü eklenir.</p>
-      <p>Bir finans uygulaması olduğumuz için şunlar <strong>hiçbir zaman</strong> istatistiklere eklenmez: tutarların kendisi (yalnızca “100–500” gibi bir aralık), arama metinleri (yalnızca uzunluğu), kendi yazdığın başlıklar, e-posta adresin ve adın.</p>
+      <p>Uygulamayı geliştirmek için Firebase Analytics ile hangi ekranların açıldığını, hangi düğmelere basıldığını ve işlemlerin başarılı ya da başarısız olduğunu kaydederiz. Bu kayıtlara hesap kimliğin, cihaz kimliği, abonelik ve giriş durumun, dil, para birimi, tema ve bildirim tercihin ile uygulama sürümü eklenir. Bir kayıt eklendiğinde ya da düzenlendiğinde kategori, kayıt türü, varlık türü ve tutar aralığı gibi kaba bilgiler de eklenir. Firebase Analytics reklam tanımlayıcını (IDFA) toplamaz.</p>
+      <p>Bir finans uygulaması olduğumuz için şunlar <strong>hiçbir zaman</strong> istatistiklere eklenmez: tutarların kendisi (yalnızca “100–500” gibi bir aralık), arama metinleri (yalnızca uzunluğu), kendi yazdığın başlıklar ve notlar, varlıklarının sembolleri, e-posta adresin ve adın.</p>
 
       <h3>Çökme raporları</h3>
       <p>Uygulama çökerse Firebase Crashlytics; hatanın teknik ayrıntılarını, cihaz modelini, iOS ve uygulama sürümünü ve kurulum kimliğini kaydeder.</p>
 
       <h3>Abonelik bilgileri</h3>
-      <p>WalletMon Premium satın alırsan ödeme Apple tarafından App Store üzerinden alınır; kart veya banka bilgilerini görmeyiz. RevenueCat, Apple'dan gelen satın alma kayıtlarını (ürün, satın alma ve yenileme tarihleri, aboneliğin durumu, ülke ve fiyat) hesap kimliğinle eşleştirerek aboneliğinin etkin olup olmadığını bize bildirir. Abonelik durumunun bir kopyası hesabında saklanır.</p>
+      <p>WalletMon Premium satın alırsan ödeme Apple tarafından App Store üzerinden alınır; kart veya banka bilgilerini görmeyiz. RevenueCat, Apple'dan gelen satın alma kayıtlarını (ürün, satın alma ve yenileme tarihleri, aboneliğin durumu, ülke ve fiyat) hesap kimliğinle eşleştirerek aboneliğinin etkin olup olmadığını bize bildirir. RevenueCat'e ayrıca dil, para birimi, giriş durumu ve uygulama sürümü ile satın almaları kullanım istatistikleriyle eşleştirmek için Firebase Analytics kurulum kimliği gönderilir; adın ve e-posta adresin gönderilmez. Abonelik durumunun bir kopyası hesabında saklanır.</p>
 
       <h3>Destek mesajları</h3>
       <p>“Bize ulaşın” formunu gönderirsen seçtiğin konu, mesajın, yanıt için yazdığın e-posta adresi, hesap kimliğin, uygulama ve iOS sürümün ve cihaz modelin kaydedilir. Bize doğrudan e-posta yazarsan e-postadaki bilgileri işleriz.</p>
@@ -110,9 +110,11 @@
       <h3>Piyasa verileri</h3>
       <p>Döviz kurları, altın, fon ve hisse fiyatlarını almak için Uygulama şu kaynaklara istek gönderir: Türkiye Cumhuriyet Merkez Bankası, TEFAS, Yahoo Finance, gold-api.com, Truncgil Finans, ExchangeRate-API (open.er-api.com) ve jsDelivr üzerinden yayımlanan açık kur verisi. Bu isteklerde yalnızca sorgulanan sembol veya para birimi bulunur; finans kayıtların ya da hesap bilgilerin gönderilmez. Bu servisler, her internet isteğinde olduğu gibi IP adresini görebilir.</p>
 
+      <h3>Reklamlar (Google AdMob)</h3>
+      <p>Ücretsiz sürümün kayıt sınırına ulaştığında, ek kayıt hakkı için kısa bir ödüllü reklam izlemeyi seçebilirsin. Reklamı Google AdMob gösterir. Bunun için Google; cihaz ve uygulama bilgilerini, IP adresini, reklamla etkileşimini (gösterim, tıklama, izlenme süresi) ve <strong>yalnızca iOS'taki izin penceresinde “İzin Ver” dersen</strong> cihazının reklam tanımlayıcısını (IDFA) işler. İzin vermezsen reklam yine gösterilir ama kişiselleştirilmez. Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de reklamdan önce Google'ın onay formu çıkar; seçimini <em>Ayarlar → Reklam gizlilik seçenekleri</em>'nden, takip iznini iOS'ta <em>Ayarlar → Gizlilik ve Güvenlik → Takip</em>'ten istediğin an değiştirebilirsin. Finans kayıtların hiçbir zaman reklam sağlayıcısına gönderilmez. Premium'da reklam gösterilmez.</p>
+
       <h2 id="tr-cihaz">3. Cihazında kalanlar</h2>
       <ul>
-        <li><strong>Face ID / Touch ID:</strong> Uygulama kilidini iOS doğrular; biyometrik verin bize hiçbir zaman ulaşmaz.</li>
         <li><strong>Hatırlatıcılar:</strong> Telefonunda planlanan yerel bildirimlerdir.</li>
         <li><strong>Widget ve önbellek:</strong> Hızlı açılış ve ana ekran widget'ı için kayıtlarının bir kopyası cihazında tutulur.</li>
         <li><strong>PDF raporlar:</strong> Telefonunda oluşturulur; yalnızca sen paylaşırsan paylaşılır.</li>
@@ -125,8 +127,9 @@
           <tbody>
             <tr><td>Hesabını açmak, kayıtlarını saklamak ve cihazların arasında eşitlemek</td><td>Hesap bilgileri, finans kayıtları, cihaz bilgileri</td><td>Sözleşmenin kurulması ve ifası (KVKK m.5/2-c, GDPR m.6/1-b)</td></tr>
             <tr><td>Aboneliğini sağlamak ve doğrulamak</td><td>Abonelik bilgileri, hesap kimliği</td><td>Sözleşmenin ifası (KVKK m.5/2-c, GDPR m.6/1-b)</td></tr>
-            <tr><td>Kötüye kullanımı önlemek, isteklerin gerçek uygulamadan geldiğini doğrulamak</td><td>Cihaz doğrulama sonucu (Apple App Attest), cihaz bilgileri</td><td>Meşru menfaat (KVKK m.5/2-f, GDPR m.6/1-f)</td></tr>
+            <tr><td>Kötüye kullanımı önlemek, isteklerin gerçek uygulamadan geldiğini doğrulamak</td><td>Cihaz doğrulama sonucu (Apple App Attest / DeviceCheck), cihaz bilgileri</td><td>Meşru menfaat (KVKK m.5/2-f, GDPR m.6/1-f)</td></tr>
             <tr><td>Uygulamayı iyileştirmek, hataları bulmak</td><td>Kullanım istatistikleri, çökme raporları</td><td>Meşru menfaat (KVKK m.5/2-f, GDPR m.6/1-f)</td></tr>
+            <tr><td>Ödüllü reklam göstermek ve ölçmek</td><td>Cihaz bilgileri, IP adresi, reklam etkileşimi; izin verirsen reklam tanımlayıcısı</td><td>Kişiselleştirilmiş reklam ve takip için açık rıza (KVKK m.5/1, GDPR m.6/1-a); diğerleri için meşru menfaat</td></tr>
             <tr><td>Destek taleplerine yanıt vermek</td><td>Destek mesajları</td><td>Sözleşmenin ifası ve meşru menfaat</td></tr>
             <tr><td>Yasal yükümlülükleri yerine getirmek</td><td>Gerekli olan veriler</td><td>Kanuni yükümlülük (KVKK m.5/2-ç, GDPR m.6/1-c)</td></tr>
           </tbody>
@@ -143,8 +146,9 @@
             <tr><td>Google — Cloud Firestore</td><td>Finans kayıtları, profil, cihazlar, destek mesajları</td><td>Almanya (Frankfurt, europe-west3)</td></tr>
             <tr><td>Google — Firebase Analytics, Crashlytics, App Check</td><td>İstatistikler, çökme raporları, uygulama doğrulama</td><td>ABD ve diğer Google bölgeleri</td></tr>
             <tr><td>Google Sign-In</td><td>Google ile giriş</td><td>ABD</td></tr>
-            <tr><td>Apple — Sign in with Apple, App Store, App Attest</td><td>Apple ile giriş, ödemeler, cihaz doğrulama</td><td>ABD ve diğer Apple bölgeleri</td></tr>
-            <tr><td>RevenueCat, Inc.</td><td>Abonelik durumu</td><td>ABD</td></tr>
+            <tr><td>Apple — Sign in with Apple, App Store, App Attest, DeviceCheck</td><td>Apple ile giriş, ödemeler, cihaz doğrulama</td><td>ABD ve diğer Apple bölgeleri</td></tr>
+            <tr><td>RevenueCat, Inc.</td><td>Abonelik durumu (hesap kimliği, satın alma kayıtları, dil, para birimi, uygulama sürümü)</td><td>ABD</td></tr>
+            <tr><td>Google — AdMob</td><td>Ödüllü reklamlar ve reklam onayı</td><td>ABD ve diğer Google bölgeleri</td></tr>
             <tr><td>Piyasa veri sağlayıcıları (bkz. bölüm 2)</td><td>Fiyat ve kurlar; kişisel veri gönderilmez</td><td>Çeşitli</td></tr>
           </tbody>
         </table>
@@ -153,10 +157,11 @@
 
       <h2 id="tr-saklama">6. Saklama süreleri</h2>
       <ul>
-        <li><strong>Hesap ve finans kayıtları:</strong> Hesabın açık olduğu sürece. Hesabını sildiğinde kayıtların, profilin ve cihaz kayıtların silinir.</li>
+        <li><strong>Hesap ve finans kayıtları:</strong> Hesabın açık olduğu sürece. Hesabını sildiğinde kayıtların, profilin ve cihaz kayıtların silinir. Destek mesajların ve hizmet sağlayıcıların tuttuğu kayıtlar aşağıdaki sürelerle silinir.</li>
         <li><strong>Kullanım istatistikleri ve çökme raporları:</strong> Google'ın bu hizmetler için belirlediği sürelerin sonunda kendiliğinden silinir; hesabına bağlı istatistiklerin silinmesini e-postayla da isteyebilirsin.</li>
         <li><strong>Abonelik kayıtları:</strong> Apple ve RevenueCat tarafından, vergi ve muhasebe yükümlülüklerinin gerektirdiği süre boyunca.</li>
         <li><strong>Destek mesajları:</strong> Talebin çözülmesi için gereken süre boyunca, en fazla iki yıl.</li>
+        <li><strong>Reklam verileri:</strong> Google'ın AdMob için belirlediği süreler boyunca, Google tarafından.</li>
       </ul>
       <p>Misafir olarak kullanıyorsan verilerin bu cihazdaki anonim hesaba bağlıdır. Uygulamayı silmeden önce verilerini saklamak istersen Apple, Google ya da e-postayla giriş yap; silinmesini istersen önce Ayarlar'dan hesabını sil.</p>
 
@@ -169,7 +174,7 @@
       </ul>
 
       <h2 id="tr-guvenlik">8. Güvenlik</h2>
-      <p>Uygulama ile sunucular arasındaki tüm trafik şifrelidir (TLS). Veritabanı kuralları, her hesabın yalnızca kendi verisini okuyup yazabilmesine izin verir. Sunucuya gelen istekler Apple App Attest ile doğrulanır. İstersen uygulamayı Face ID / Touch ID ile kilitleyebilirsin. Hiçbir sistem kusursuz değildir; bir veri ihlali olursa yasaların öngördüğü şekilde seni ve yetkili makamları bilgilendiririz.</p>
+      <p>Uygulama ile sunucular arasındaki tüm trafik şifrelidir (TLS). Veritabanı kuralları, her hesabın yalnızca kendi verisini okuyup yazabilmesine izin verir. Firebase App Check, sunucuya gelen isteklerin gerçek uygulamadan geldiğini Apple App Attest ve DeviceCheck ile doğrulamaya yardımcı olur. Hiçbir sistem kusursuz değildir; bir veri ihlali olursa yasaların öngördüğü şekilde seni ve yetkili makamları bilgilendiririz.</p>
 
       <h2 id="tr-cocuk">9. Çocuklar</h2>
       <p>Uygulama 13 yaşından küçük çocuklara yönelik değildir ve onlardan bilerek veri toplamayız. Böyle bir durumu fark edersen bize yaz, verileri sileriz.</p>
@@ -197,7 +202,7 @@
       <section class="summary">
         <h2>In short</h2>
         <ul>
-          <li>We show no ads, we never sell your data, and we do not track you across other apps or websites.</li>
+          <li>We never sell your data. In the free version an ad is shown only when you choose to watch a rewarded ad, and ad tracking happens only if you allow it in iOS.</li>
           <li>The records you enter are stored with your account in Google Firebase, on servers in Frankfurt, Germany.</li>
           <li>Usage statistics never contain amounts, search text or titles you typed.</li>
           <li>Statement PDFs are read on your phone; the file itself is never sent to any server.</li>
@@ -232,23 +237,23 @@
       <p>When you first open the App, an anonymous guest account is created for you; no name or e-mail is asked for. If you sign in with Apple, with Google, or with an e-mail and password, we process your e-mail address, the name your sign-in provider shares, your sign-in method and when your account was created. Your password is held by Firebase Authentication and is never visible to us. The avatar and name you choose in your profile are saved to your account.</p>
 
       <h3>Your financial records</h3>
-      <p>Everything you enter: payments, income, spending, categories, titles and notes, amounts, dates, repeat and reminder settings; your savings and holdings (type, quantity, purchase value, purchase dates), goals, cash adjustments and preferred currency. These records are kept only to provide the App to you; they are not analysed, used for advertising or used for any other purpose.</p>
+      <p>Everything you enter: payments, income, spending, categories, titles and notes, amounts, dates, repeat and reminder settings; your savings and holdings (type, quantity, purchase value, purchase dates), goals, cash adjustments and preferred currency. These records are kept only to provide the App to you. Their content (titles, notes, the amounts themselves, the symbols of your holdings) is not examined and is never used for advertising; to understand how the App is used, only coarse facts such as category, record type and amount range are added to usage statistics (see below).</p>
 
       <h3>Statement import</h3>
       <p>When you pick a card or account statement PDF, the file is read and split into lines on your phone. The PDF itself is never uploaded anywhere; only the lines you review and confirm are saved as your records.</p>
 
       <h3>Device information</h3>
-      <p>To know which devices your account is used on and to troubleshoot problems: device model, iOS version, app version and build number, language and region setting, time zone, when the device was last seen, and a random identifier generated for this installation.</p>
+      <p>To know which devices your account is used on and to troubleshoot problems: device model, iOS version, app version and build number, language and region setting, time zone, when the device was last seen, and the device identifier iOS gives the App (the identifier for vendor, IDFV). It is kept in your device's keychain so that it stays the same if you delete and reinstall the App.</p>
 
       <h3>Usage statistics</h3>
-      <p>To improve the App we use Firebase Analytics to record which screens are opened, which buttons are tapped and whether actions succeed or fail. These events carry your account identifier, the installation identifier, your subscription and sign-in status, your language, currency, theme and notification preferences, and the app version.</p>
-      <p>Because this is a finance app, the following are <strong>never</strong> included in statistics: the amounts themselves (only a range such as “100–500”), search text (only its length), titles you typed, your e-mail address and your name.</p>
+      <p>To improve the App we use Firebase Analytics to record which screens are opened, which buttons are tapped and whether actions succeed or fail. These events carry your account identifier, the device identifier, your subscription and sign-in status, your language, currency, theme and notification preferences, and the app version. When you add or edit a record, coarse facts such as its category, record type, asset type and amount range are included too. Firebase Analytics does not collect your advertising identifier (IDFA).</p>
+      <p>Because this is a finance app, the following are <strong>never</strong> included in statistics: the amounts themselves (only a range such as “100–500”), search text (only its length), titles and notes you typed, the symbols of your holdings, your e-mail address and your name.</p>
 
       <h3>Crash reports</h3>
       <p>If the App crashes, Firebase Crashlytics records the technical details of the error, the device model, the iOS and app versions and the installation identifier.</p>
 
       <h3>Subscriptions</h3>
-      <p>If you buy WalletMon Premium, payment is taken by Apple through the App Store; we never see your card or bank details. RevenueCat matches the purchase records Apple provides (product, purchase and renewal dates, subscription status, country and price) to your account identifier and tells the App whether your subscription is active. A copy of your subscription status is kept with your account.</p>
+      <p>If you buy WalletMon Premium, payment is taken by Apple through the App Store; we never see your card or bank details. RevenueCat matches the purchase records Apple provides (product, purchase and renewal dates, subscription status, country and price) to your account identifier and tells the App whether your subscription is active. RevenueCat also receives your language, currency, sign-in status and app version, and the Firebase Analytics installation identifier so purchases can be matched with usage statistics; it does not receive your name or e-mail address. A copy of your subscription status is kept with your account.</p>
 
       <h3>Support messages</h3>
       <p>If you send the “Contact us” form, we store the topic you chose, your message, the e-mail address you gave for the reply, your account identifier, your app and iOS versions and your device model. If you e-mail us directly, we process the information in that e-mail.</p>
@@ -256,9 +261,11 @@
       <h3>Market data</h3>
       <p>To fetch exchange rates and gold, fund and share prices, the App sends requests to: the Central Bank of the Republic of Türkiye, TEFAS, Yahoo Finance, gold-api.com, Truncgil Finans, ExchangeRate-API (open.er-api.com) and open currency data published through jsDelivr. These requests contain only the symbol or currency being looked up; your records and account details are never sent. Like any internet request, these services can see your IP address.</p>
 
+      <h3>Ads (Google AdMob)</h3>
+      <p>When you reach a free-version limit, you can choose to watch a short rewarded ad for an extra record. The ad is served by Google AdMob, which processes device and app information, your IP address, your interaction with the ad (impressions, clicks, view time) and — <strong>only if you tap “Allow” on the iOS tracking prompt</strong> — your device's advertising identifier (IDFA). If you do not allow it, ads are still shown but are not personalised. In the European Economic Area, the UK and Switzerland, Google's consent form appears before the first ad; you can change your choice any time in <em>Settings → Ad privacy options</em>, and tracking permission in iOS <em>Settings → Privacy &amp; Security → Tracking</em>. Your financial records are never sent to the ad provider. Premium shows no ads.</p>
+
       <h2 id="en-device">3. What stays on your device</h2>
       <ul>
-        <li><strong>Face ID / Touch ID:</strong> the app lock is verified by iOS; your biometric data never reaches us.</li>
         <li><strong>Reminders:</strong> local notifications scheduled on your phone.</li>
         <li><strong>Widget and cache:</strong> a copy of your records is kept on the device so the App opens quickly and the home-screen widget can show them.</li>
         <li><strong>PDF reports:</strong> generated on your phone and shared only if you share them.</li>
@@ -271,8 +278,9 @@
           <tbody>
             <tr><td>Creating your account, storing your records and syncing them between devices</td><td>Account, financial records, device information</td><td>Performance of a contract (GDPR Art. 6(1)(b), KVKK Art. 5(2)(c))</td></tr>
             <tr><td>Providing and verifying your subscription</td><td>Subscription data, account identifier</td><td>Performance of a contract (GDPR Art. 6(1)(b), KVKK Art. 5(2)(c))</td></tr>
-            <tr><td>Preventing abuse and verifying that requests come from the genuine App</td><td>Device attestation result (Apple App Attest), device information</td><td>Legitimate interests (GDPR Art. 6(1)(f), KVKK Art. 5(2)(f))</td></tr>
+            <tr><td>Preventing abuse and verifying that requests come from the genuine App</td><td>Device attestation result (Apple App Attest / DeviceCheck), device information</td><td>Legitimate interests (GDPR Art. 6(1)(f), KVKK Art. 5(2)(f))</td></tr>
             <tr><td>Improving the App and finding bugs</td><td>Usage statistics, crash reports</td><td>Legitimate interests (GDPR Art. 6(1)(f), KVKK Art. 5(2)(f))</td></tr>
+            <tr><td>Showing and measuring rewarded ads</td><td>Device information, IP address, ad interactions; the advertising identifier if you allow it</td><td>Consent for personalised ads and tracking (GDPR Art. 6(1)(a), KVKK Art. 5(1)); legitimate interests otherwise</td></tr>
             <tr><td>Answering support requests</td><td>Support messages</td><td>Performance of a contract and legitimate interests</td></tr>
             <tr><td>Meeting legal obligations</td><td>Data as required</td><td>Legal obligation (GDPR Art. 6(1)(c), KVKK Art. 5(2)(ç))</td></tr>
           </tbody>
@@ -289,8 +297,9 @@
             <tr><td>Google — Cloud Firestore</td><td>Financial records, profile, devices, support messages</td><td>Germany (Frankfurt, europe-west3)</td></tr>
             <tr><td>Google — Firebase Analytics, Crashlytics, App Check</td><td>Statistics, crash reports, app verification</td><td>USA and other Google regions</td></tr>
             <tr><td>Google Sign-In</td><td>Signing in with Google</td><td>USA</td></tr>
-            <tr><td>Apple — Sign in with Apple, App Store, App Attest</td><td>Signing in with Apple, payments, device attestation</td><td>USA and other Apple regions</td></tr>
-            <tr><td>RevenueCat, Inc.</td><td>Subscription status</td><td>USA</td></tr>
+            <tr><td>Apple — Sign in with Apple, App Store, App Attest, DeviceCheck</td><td>Signing in with Apple, payments, device attestation</td><td>USA and other Apple regions</td></tr>
+            <tr><td>RevenueCat, Inc.</td><td>Subscription status (account identifier, purchase records, language, currency, app version)</td><td>USA</td></tr>
+            <tr><td>Google — AdMob</td><td>Rewarded ads and ad consent</td><td>USA and other Google regions</td></tr>
             <tr><td>Market data providers (see section 2)</td><td>Prices and rates; no personal data is sent</td><td>Various</td></tr>
           </tbody>
         </table>
@@ -299,10 +308,11 @@
 
       <h2 id="en-retention">6. Retention</h2>
       <ul>
-        <li><strong>Account and financial records:</strong> for as long as your account exists. When you delete your account, your records, profile and device entries are deleted.</li>
+        <li><strong>Account and financial records:</strong> for as long as your account exists. When you delete your account, your records, profile and device entries are deleted. Support messages and the records our service providers keep are deleted on the schedules below.</li>
         <li><strong>Usage statistics and crash reports:</strong> deleted automatically at the end of the retention periods Google sets for these services; you can also ask us by e-mail to delete the statistics tied to your account.</li>
         <li><strong>Subscription records:</strong> kept by Apple and RevenueCat for as long as tax and accounting obligations require.</li>
         <li><strong>Support messages:</strong> for as long as needed to resolve your request, and no longer than two years.</li>
+        <li><strong>Ad data:</strong> kept by Google for the periods it sets for AdMob.</li>
       </ul>
       <p>If you use the App as a guest, your data is tied to the anonymous account on that device. To keep your data before removing the App, sign in with Apple, Google or e-mail; to have it deleted, delete your account in Settings first.</p>
 
@@ -315,7 +325,7 @@
       </ul>
 
       <h2 id="en-security">8. Security</h2>
-      <p>All traffic between the App and its servers is encrypted (TLS). Database rules allow each account to read and write only its own data. Requests to our backend are verified with Apple App Attest. You can lock the App with Face ID / Touch ID. No system is perfect; if a data breach occurs, we will notify you and the authorities as the law requires.</p>
+      <p>All traffic between the App and its servers is encrypted (TLS). Database rules allow each account to read and write only its own data. Firebase App Check helps verify that requests to our backend come from the genuine App, using Apple App Attest and DeviceCheck. No system is perfect; if a data breach occurs, we will notify you and the authorities as the law requires.</p>
 
       <h2 id="en-children">9. Children</h2>
       <p>The App is not directed at children under 13, and we do not knowingly collect data from them. If you become aware that this has happened, write to us and we will delete the data.</p>
